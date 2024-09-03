@@ -1,0 +1,38 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block titulo %}
+Ruedas
+{% endblock titulo%}
+
+{% block contenido %}
+<section class="container d-flex justify-content-center">
+    <a href="{% url 'pagina_principal' %}" >
+    <img src="{% static 'img/logos-life-AI.png' %}" class="imagen-1 imagen ">
+    </a>
+</section>
+<section class="container d-flex justify-content-center">
+    <h2 class="textito-2 p-3">RUEDAS SKATE</h2>
+</section>
+
+
+<section class="container mt-5">
+    <div class="row ">
+        {% for producto in productos %}
+        <div class="col-md-4 col-6 bordesito-2 text-center py-3">
+            <a href="" class="">
+            <img src="{{ producto.imagen.url }}" alt="" class="w-75 imagensita">
+            <p> {{ producto.nombre }} </p>
+            <span class="spansito">${{ producto.precio }}</span>
+            {% if user.is_authenticated %}
+           <a href="{% url 'Add' producto.id %}" class="text-start ms-3"><button class="btn btn-success  text-start "> Añadir a carrito </button></a> 
+            </a>
+            {% else %}
+            <a href="{% url 'pagina_entrar' %}" class="text-start ms-3"><button class="btn btn-success  text-start "> Añadir a carrito </button></a> 
+            </a>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock contenido %}

@@ -1,0 +1,39 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block titulo %}
+Entrar
+{% endblock titulo%}
+
+
+{% block contenido %}
+<form method="POST">
+    {% csrf_token %}
+    <section class="container py-3">
+        <section class="row d-flex">
+            <h1 class="text-center mt-3"> Bienvenido </h1>
+        </section>
+        <section class="container py-3"  style="background-color: #343a40; border: black 1px solid;">
+            <h4 class="justify-content-center text-center mt-3" style="color: white;"> Ingresa un usuario existente </h4>
+            <section class="row d-flex justify-content-center text-center" >
+                <div class="col-xl-3 mt-3">
+                <label style="color: white;" for="{{ formulario.usuario.id_for_label }}">{{ formulario.usuario.label}}</label>
+                {{ formulario.usuario }}
+                </div>                         
+            </section>
+            <section class="row d-flex justify-content-center text-center">
+                <div class="col-xl-3 mt-3">
+                <label  style="color: white;" for="{{ formulario.contrasenia_usuario.id_for_label }}">{{ formulario.contrasenia_usuario.label}}</label>
+                {{ formulario.contrasenia_usuario }}
+                </div>                         
+            </section>
+            <section class="row d-flex justify-content-center text-center">
+                <div class="col-xl-3 mt-3 py-3">
+                    <button class="btn col-xl-12 bordesito-1" type="submit" style="background-color: green;">Entrar</button>
+                </div>                         
+            </section>
+
+        </section>
+    </section>
+</form>
+{% endblock contenido %}

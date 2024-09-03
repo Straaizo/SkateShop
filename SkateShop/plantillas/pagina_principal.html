@@ -1,0 +1,55 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block titulo %}
+Inicio
+{% endblock titulo%}
+
+
+{% block contenido %}
+<section class="">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'img/Banners-web-Noviembre-2022_DragonFormula.png' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'img/Banners-web-Noviembre-2022_OldSchool.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'img/Banners-web-Noviembre-2022_THUNDER.png' %}" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+</section>
+<section class="container-fluid">
+    <div class="row justify-content-center pt-5">
+      <div class="col-md-4 col-6 p- text-center">  
+        <a href="{% url 'pagina_tablas' %}"><img src="{% static 'img/1200.webp' %}" class="w-75 imagen"></a>
+        <a href="{% url 'pagina_tablas' %}" class="textito-1"><h3 class="textito-1 p-3 imagen">
+           Tablas 
+        </h3></a>
+      </div>
+      <div class="col-md-4 col-6 p-3 text-center">  
+        <a href="{% url 'pagina_trucks' %}"><img src="{% static 'img/635.webp' %}" class="w-75 imagen"></a>
+        <a href="{% url 'pagina_trucks' %}" class="textito-1"><h3 class="textito-1 p-3 imagen">
+           Trucks 
+        </h3></a>
+      </div>
+      <div class="col-md-4 col-6 p-3 text-center">  
+        <a href="{% url 'pagina_ruedas' %}"><img src="{% static 'img/ruedas/268.webp' %}" class="w-75 imagen"></a>
+        <a href="{% url 'pagina_ruedas' %}" class="textito-1"><h3 class="textito-1 p-3 imagen">
+           Ruedas
+        </h3></a>
+      </div>
+    </div>
+  </section>
+{% endblock contenido %}

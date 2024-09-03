@@ -1,0 +1,74 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block titulo %}
+Registrarse
+{% endblock titulo%}
+
+
+{% block contenido %}
+<form method="POST">
+    {% csrf_token %}
+    <section class="container py-3">
+        <section class="row d-flex">
+            <h1 class="text-center mt-3"> Bienvenido </h1>
+        </section>
+        <section class="container py-3"  style="background-color: #343a40; border: black 1px solid;">
+            <h4 class="justify-content-center text-center mt-3" style="color: white;"> Ingresa tus Datos.</h4>
+            <section class="row text-center justify-content-center mt-3 ">
+                <fieldset class="col-xl-3">
+                    <label style="color: white;">{{ formulario.first_name.label }}</label>
+                        {{ formulario.first_name }}
+                        <p class="feedback-invalide">
+                            {{ formulario.first_name.errors }}
+                        </p>
+                </fieldset>
+                <fieldset class="col-xl-3">
+                    <label style="color: white;">{{ formulario.last_name.label }}</label>
+                        {{ formulario.last_name }}
+                    <p class="feedback-invalide">
+                        {{ formulario.last_name.errors }}
+                    </p>
+                </fieldset>
+            </section>
+            <section class=" row text-center justify-content-center">
+                <fieldset class="col-xl-6">
+                    <label style="color: white;">{{ formulario.email.label}}</label>
+                    {{ formulario.email }}
+                    <p class="feedback-invalide">
+                         {{ formulario.email.errors }}
+                    </p>
+                </fieldset>
+            </section>
+            <section class="row text-center justify-content-center">
+                <fieldset class="col-xl-3">
+                    <label style="color: white;">{{ formulario.username.label }}</label>
+                    {{ formulario.username }}
+                    <p class="feedback-invalide">
+                        {{ formulario.username.errors }}
+                    </p>
+                </fieldset>
+            </section>
+            <section class="row text-center justify-content-center  ">
+                <fieldset class="col-xl-3">
+                    <label style="color: white;">{{ formulario.password1.label }}</label>
+                        {{ formulario.password1 }}
+                        <p class="feedback-invalide">
+                            {{ formulario.password1.errors }}
+                        </p>
+                </fieldset>
+                <fieldset class="col-xl-3">
+                    <label style="color: white;">{{ formulario.password2.label }}</label>
+                        {{ formulario.password2 }}
+                    <p class="feedback-invalide">
+                        {{ formulario.password2.errors }}
+                    </p>
+                </fieldset>
+            </section>
+            <section class="row justify-content-center  p-2">
+                <button class="btn col-xl-3 bordesito-1 " style="background-color: green;" type="submit">Registrarse</button>
+                </section>
+        </section>
+    </section>
+</form>
+{% endblock contenido %}

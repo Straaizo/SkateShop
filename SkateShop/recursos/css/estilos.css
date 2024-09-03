@@ -1,0 +1,195 @@
+
+body > main{
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+.oferta {
+    color: black;
+    }
+
+.oferta a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.abajo{
+    border: 2px black solid;
+    background-color: black;
+    justify-content: center;
+}
+
+
+.textito-1{
+    text-decoration: none;
+    color: black;
+}
+
+.textito-3:hover{
+    color: white;
+    
+}
+
+.textito-1:hover{
+    color: black;
+    
+}
+
+.imagen:hover{
+    transform: scale(1.15);
+}
+
+.imagensita:hover{
+    opacity: 0.8;
+}
+
+.imagen-1{
+    display: flex;
+    justify-content: center;
+    width: 15rem;
+}
+
+.textito-2{
+    text-align: center;
+    font-size: 2.813rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+
+.bordesito-1{
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    border-radius: 0.25;
+
+}
+
+.bordesito-1:hover{
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 50%);
+    border-color: #ddd;
+}
+
+.spansito{
+    
+    font-weight: 700;
+}
+
+.bordesito-1 a {
+    text-decoration: none;
+    color: black;
+  }
+
+.bordesito-1 a:hover {
+    color: black;
+}
+
+
+.bordesito-2{
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    border-radius: 5px;
+    
+}
+
+.bordesito-2:hover{
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 25%);
+    border-color: #ddd;
+}
+
+
+.bordesito-2 a {
+    text-decoration: none;
+    color: black;
+  }
+
+.bordesito-2 a:hover {
+    color: black;
+}
+
+.errorlist {
+    color: red;
+}
+
+
+
+
+.shop{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.shop-2{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+
+.pad {
+    padding: 25px;
+    color: red;
+}
+
+
+.producto-imagen {
+    max-height: 6rem;
+    object-fit: contain; 
+    display: flex;
+    
+}
+
+.bord{
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    border-radius: 0.313rem;
+}
+
+
+.shop-3 {
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.padi {
+    margin-right: 3.7rem;
+   
+}
+
+
+
+
+.textshop {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.padi-2 {
+    margin-left: 1.563rem;
+}
+
+.border-1{
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    border-radius: 0.313rem;
+    
+}
+
+footer.footer {
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 20px 0; 
+    }
+}

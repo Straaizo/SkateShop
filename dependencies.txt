@@ -1,0 +1,16 @@
+
+ESP:
+Si quieres inciarlo por tu cuenta recuerda crear un entorno y añadir todas las dependencias.
+
+
+ENG:
+if you want to run on your own remember to create an environment and add dependencies.
+
+
+asgiref==3.8.1
+Django==5.1
+mysqlclient==2.2.4
+pillow==10.4.0
+sqlparse==0.5.1
+sweetify==2.3.1
+tzdata==2024.1
