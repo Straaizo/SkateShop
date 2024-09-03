@@ -11,6 +11,7 @@ Este proyecto se encuentra en un 50% por completar (según yo).
 
 
 ENG:
+
 Project created only by me using the frameworks: Django and Boostrap 5.
 
 This project was for an evaluation of my university inspired by skateshops and e-commerce. 
