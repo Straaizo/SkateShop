@@ -1,12 +1,3 @@
-
-ESP:
-Si quieres inciarlo por tu cuenta recuerda crear un entorno y añadir todas las dependencias.
-
-
-ENG:
-if you want to run on your own remember to create an environment and add dependencies.
-
-
 asgiref==3.8.1
 Django==5.1
 mysqlclient==2.2.4
