@@ -7,10 +7,10 @@ Carrito
 
 {% block contenido %}
 <div class="container">
-  <div class="text-center mb-3">
+  <div class="text-center mb-3 mt-5">
       <h1 class="shop">Carrito</h1>
   </div>
-  <div class="row border-bottom py-2">
+  <div class="row border-bottom py-2 mt-5">
       <h4 class="col text-center">Producto</h4>
       <h4 class="col text-center">Precio</h4>
       <h4 class="col text-center">Cantidad</h4>
@@ -18,7 +18,7 @@ Carrito
 
   {% if request.session.carrito.items %}
   {% for key, value in request.session.carrito.items %}
-  <div class="row align-items-center border-bottom py-2">
+  <div class="row align-items-center border-bottom py-2 mt-5">
       <div class="col d-flex align-items-center">
           <img src="{{ value.imagen_url }}" class="producto-imagen me-3" alt="{{ value.nombre }}">
           <div>{{ value.nombre }}</div>
@@ -38,7 +38,7 @@ Carrito
   {% endif %}
 </div>
 
-<div class="row text-center mt-5 py-5 justify-content-between">
+<div class="row text-center mt-5  py-5 justify-content-between" >
   <div class="col-3"><a href="{% url 'CLS' %}" class="btn btn-danger">Limpiar</a></div>
   <div class="col-3"><a href="{% url 'pagina_principal' %}" class="btn btn-success">Seguir Comprando</a></div>
   {% if user.is_authenticated %}
@@ -49,5 +49,7 @@ Carrito
       Sesion </button></a>
   {% endif %}
 </div>
+
+
 
 {% endblock contenido %}

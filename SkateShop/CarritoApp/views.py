@@ -49,7 +49,7 @@ def imagen_json(request, producto_id):
     try:
         producto = Producto.objects.get(pk=producto_id)
         data = {
-            'imagen_url': producto.imagen_url(),  # Usa el método imagen_url para obtener la URL de la imagen
+            'imagen_url': producto.imagen_url(),  
         }
         return JsonResponse(data)
     except Producto.DoesNotExist:

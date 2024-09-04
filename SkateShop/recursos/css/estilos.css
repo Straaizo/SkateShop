@@ -184,12 +184,6 @@ body > main{
     
 }
 
-footer.footer {
-    padding: 10px 0;
-}
 
-@media (max-width: 768px) {
-    footer {
-        padding: 20px 0; 
-    }
-}
+
+
